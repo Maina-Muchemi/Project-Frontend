@@ -7,7 +7,7 @@ const baseQuery = fetchBaseQuery({
   // Including credentials in the request (e.g., cookies) to support authentication.
   credentials: 'include',
   // The base URL used for all API requests.
-  baseUrl: 'http://localhost:3500',
+  baseUrl: 'https://dtdobie-api.onrender.com',
   // This function prepares headers for the API request. It adds an authorization header if a token is available in the Redux store (auth.token).
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token

@@ -14,7 +14,7 @@ export const store = configureStore({
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware().concat(apiSlice.middleware),
         // Enabling the Redux DevTools extension for debugging and development purposes.
-        devTools: true  
+        devTools: false 
     
 })
 
